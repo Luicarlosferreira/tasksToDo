@@ -9,7 +9,7 @@ export const ToDoList = () => {
   const handleSetForm = () => setForm(false);
   const [task, setTask] = useState("");
   const [taskName, setTaskName] = useState("");
-
+  const totalTasks = state.length;
   //date
   const current = new Date();
   const dateVar = `${current.getDate()}/${
@@ -35,7 +35,12 @@ export const ToDoList = () => {
   console.log(state);
   return (
     <ContainerForm>
-      <h1>My All Tasks</h1>
+      <h1>
+        My All Tasks{" "}
+        {totalTasks > 0 ? (
+          <span style={{ color: "gray" }}>({totalTasks})</span>
+        ) : null}
+      </h1>
       <button className="plusTask" onClick={() => setForm(true)}>
         + New Task
       </button>
