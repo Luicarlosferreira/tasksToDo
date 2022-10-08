@@ -115,6 +115,9 @@ export const Container = styled.div`
     gap: 20px;
     animation: FadeEffect 0.3s forwards linear;
   }
+  .confirmDelete h1 {
+    text-align: center;
+  }
   .confirmDelete div button {
     padding: 10px 20px;
     border: none;
@@ -144,6 +147,11 @@ export const Container = styled.div`
   }
   .clearAll:hover {
     background-color: #431df0;
+  }
+  @media (max-width: 420px) {
+    .confirmDelete h1 {
+      font-size: 1.3em;
+    }
   }
 
   @media (max-width: 400px) {

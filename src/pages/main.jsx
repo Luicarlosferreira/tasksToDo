@@ -35,7 +35,7 @@ export const MainPage = () => {
                 </div>
                 {activeConfirm && (
                   <div className="confirmDelete">
-                    <h1> Do you wanna delete this task?</h1>
+                    <h1> Do you really want to delete this task?</h1>
                     <div>
                       <button
                         onClick={() =>
